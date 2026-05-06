@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Headphones",
+    "price": 7999,
+    "image": "https://via.placeholder.com/100"
+  },
+  {
+    "name": "Smartwatch",
+    "price": 12999,
+    "image": "https://via.placeholder.com/100"
+  },
+  {
+    "name": "Laptop Stand",
+    "price": 1999,
+    "image": "https://via.placeholder.com/100"
+  }
+]

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PICT B.E. Course Structure Mobile Site</title>
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .hero {
+      background: linear-gradient(135deg, #004d40, #00796b);
+      color: white;
+      text-align: center;
+      padding: 26px 16px;
+      border-radius: 10px;
+      margin-top: 12px;
+    }
+    .hero h1 {
+      font-size: 1.7rem;
+      margin-bottom: 8px;
+    }
+    .hero p {
+      margin: 0;
+      font-size: 1rem;
+    }
+    .section-note {
+      margin: 12px 0;
+      line-height: 1.5;
+      color: #444;
+    }
+    .subject-box {
+      background: #f1f8f7;
+      border-left: 4px solid #00796b;
+      padding: 10px;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+    .subject-box h4 {
+      margin-top: 0;
+      margin-bottom: 6px;
+      color: #004d40;
+    }
+    .footer-text {
+      font-size: 0.85rem;
+      text-align: center;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+<div data-role="page" id="home">
+  <div data-role="header" data-position="fixed" data-theme="b">
+    <h1>PICT B.E. Structure</h1>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#home" class="ui-btn-active ui-state-persist" data-transition="fade">Home</a></li>
+        <li><a href="#years" data-transition="slide">Course Years</a></li>
+        <li><a href="#contact" data-transition="slideup">Info</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div role="main" class="ui-content">
+    <div class="hero">
+      <h1>PICT B.E. Course Structure</h1>
+      <p>Static mobile website showing FE, SE, TE and BE year-wise subjects.</p>
+    </div>
+
+    <p class="section-note">
+      PICT publishes undergraduate timetable and syllabus information for First Year B.Tech and branch-wise SY, TY and Final Year B.Tech structures on its academic timetable and syllabus page.
+    </p>
+
+    <div data-role="collapsible" data-collapsed="false">
+      <h3>What this site shows</h3>
+      <ul data-role="listview" data-inset="false">
+        <li>First Year Engineering subjects</li>
+        <li>Second Year core computer-related subjects</li>
+        <li>Third Year advanced technical subjects</li>
+        <li>Final Year specialization and project-oriented subjects</li>
+      </ul>
+    </div>
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    <h4 class="footer-text">PICT Academic Overview</h4>
+  </div>
+</div>
+
+<div data-role="page" id="years">
+  <div data-role="header" data-position="fixed" data-theme="b">
+    <h1>Course Years</h1>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#home" data-transition="fade">Home</a></li>
+        <li><a href="#years" class="ui-btn-active ui-state-persist" data-transition="slide">Course Years</a></li>
+        <li><a href="#contact" data-transition="slideup">Info</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div role="main" class="ui-content">
+    <p class="section-note">
+      The year blocks below provide a simple static presentation of a typical B.E. computer-related learning path at PICT, organized into FE, SE, TE and BE for mobile viewing.
+    </p>
+
+    <div data-role="collapsible-set">
+      <div data-role="collapsible" data-collapsed="false">
+        <h3>FE - First Year Engineering</h3>
+        <div class="subject-box">
+          <h4>Engineering Mathematics</h4>
+          <p>Builds the mathematical foundation for problem solving, calculus, matrices, and analytical thinking.</p>
+        </div>
+        <div class="subject-box">
+          <h4>Engineering Physics</h4>
+          <p>Introduces physical principles useful in electronics, waves, materials, and modern technology.</p>
+        </div>
+        <div class="subject-box">
+          <h4>Basic Electrical and Electronics Engineering</h4>
+          <p>Covers circuit basics, electrical systems, and introductory electronic components.</p>
+        </div>
+        <div class="subject-box">
+          <h4>Programming Fundamentals</h4>
+          <p>Introduces logic building, algorithms, and coding basics for engineering students.</p>
+        </div>
+      </div>
+
+      <div data-role="collapsible">
+        <h3>SE - Second Year Engineering</h3>
+        <div class="subject-box">
+          <h4>Data Structures</h4>
+          <p>Teaches arrays, linked lists, stacks, queues, trees, and efficient data organization methods.</p>
+        </div>
+        <div class="subject-box">
+          <h4>Object Oriented Programming</h4>
+          <p>Focuses on classes, objects, inheritance, polymorphism, and modular software design.</p>
+        </div>
+        <div class="subject-box">
+          <h4>Digital Logic Design</h4>
+          <p>Explains number systems, logic gates, combinational circuits, and sequential circuits.</p>
+        </div>
+        <div class="subject-box">
+          <h4>Discrete Mathematics</h4>
+          <p>Provides the basis for graph theory, logic, sets, relations, and computer science reasoning.</p>
+        </div>
+      </div>
+
+      <div data-role="collapsible">
+        <h3>TE - Third Year Engineering</h3>
+        <div class="subject-box">
+          <h4>Database Management Systems</h4>
+          <p>Explains relational databases, SQL, normalization, and efficient data storage concepts.</p>
+        </div>
+        <div class="subject-box">
+          <h4>Operating Systems</h4>
+          <p>Covers processes, memory management, scheduling, and system-level resource handling.</p>
+        </div>
+        <div class="subject-box">
+          <h4>Computer Networks</h4>
+          <p>Introduces communication models, protocols, routing, and internet architecture.</p>
+        </div>
+        <div class="subject-box">
+          <h4>Software Engineering</h4>
+          <p>Focuses on requirement analysis, software design, testing, and project development practices.</p>
+        </div>
+      </div>
+
+      <div data-role="collapsible">
+        <h3>BE - Final Year Engineering</h3>
+        <div class="subject-box">
+          <h4>Machine Learning / Elective Subjects</h4>
+          <p>Allows students to explore specialized domains such as AI, data science, security, or cloud computing.</p>
+        </div>
+        <div class="subject-box">
+          <h4>Major Project</h4>
+          <p>Gives practical experience in designing, developing, and presenting a complete engineering solution.</p>
+        </div>
+        <div class="subject-box">
+          <h4>Seminar</h4>
+          <p>Improves technical presentation, research reading, and communication skills.</p>
+        </div>
+        <div class="subject-box">
+          <h4>Internship / Industry Exposure</h4>
+          <p>Connects academic learning with real-world engineering applications and workplace practice.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    <h4 class="footer-text">Year-wise Subject Overview</h4>
+  </div>
+</div>
+
+<div data-role="page" id="contact">
+  <div data-role="header" data-position="fixed" data-theme="b">
+    <h1>Academic Info</h1>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#home" data-transition="fade">Home</a></li>
+        <li><a href="#years" data-transition="slide">Course Years</a></li>
+        <li><a href="#contact" class="ui-btn-active ui-state-persist" data-transition="slideup">Info</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div role="main" class="ui-content">
+    <div class="subject-box">
+      <h4>Official PICT Academic Source</h4>
+      <p>PICT provides official year-wise undergraduate timetable and syllabus references for FE, SY, TY and Final Year B.Tech on its Time Table and Syllabus page.</p>
+      <p><strong>Website:</strong> <a href="https://www.pict.edu/time_table_syllabus/" target="_blank" rel="noopener noreferrer">pict.edu/time_table_syllabus</a></p>
+    </div>
+
+    <div data-role="collapsible" data-collapsed="false">
+      <h3>Note</h3>
+      <p>This mobile site is a static academic showcase. Subject names and descriptions are simplified for demonstration, while the official PICT website should be used for exact branch-wise syllabus details.</p>
+    </div>
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    <h4 class="footer-text">Static Mobile Site Demo</h4>
+  </div>
+</div>
+
+</body>
+</html>

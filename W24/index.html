@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Review Mobile Website</title>
+
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <style>
+        .hero {
+            background-color: rgb(0, 255, 255);
+            padding: 20px;
+            border-radius: 20px;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .hero p {
+            color: red;
+        }
+
+        .movie-poster {
+            width: 100%;
+            max-width: 250px;
+            display: block;
+            margin: 10px auto;
+            border-radius: 10px;
+        }
+
+        .review-box {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div data-role="page" id="home">
+        <div data-role="header">
+            <h1>Movie Reviews</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" class="ui-btn-active ui-state-persist" data-transition="slide">Home</a></li>
+                    <li><a href="#movie1" data-transition="slide">Movie 1</a></li>
+                    <li><a href="#movie2" data-transition="slide">Movie 2</a></li>
+                    <li><a href="#movie3" data-transition="slide">Movie 3</a></li>
+                    <li><a href="#movie4" data-transition="slide">Movie 4</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div role="main" class="ui-content">
+            <div class="hero">
+                <h1>Static Movie Review Website</h1>
+                <p>A simple jQuery Mobile website for movie lovers.</p>
+            </div>
+
+            <p>
+                Welcome to the mobile movie review website. This site displays static information about popular movies
+                including poster, genre, summary, and review.
+            </p>
+
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>Quick Highlights</h3>
+                <ul data-role="listview" data-inset="false">
+                    <li>5 popular movies included.</li>
+                    <li>Each page contains poster, genre, summary, and review.</li>
+                    <li>All posters are loaded from local folder.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <h4>Movie Review Mobile Website</h4>
+        </div>
+    </div>
+
+    <div data-role="page" id="movie1">
+        <div data-role="header">
+            <h1>Oppenheimer</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-transition="slide">Home</a></li>
+                    <li><a href="#movie1" class="ui-btn-active ui-state-persist" data-transition="slide">Movie 1</a></li>
+                    <li><a href="#movie2" data-transition="slide">Movie 2</a></li>
+                    <li><a href="#movie3" data-transition="slide">Movie 3</a></li>
+                    <li><a href="#movie4" data-transition="slide">Movie 4</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div role="main" class="ui-content">
+            <img src="oppenheimer.jpg" alt="Oppenheimer Poster" class="movie-poster">
+            <div class="review-box">
+                <h3>Genre</h3>
+                <p>Biography, Drama, History</p>
+
+                <h3>Short Summary</h3>
+                <p>This movie tells the story of J. Robert Oppenheimer and his contribution to the development of the atomic bomb.</p>
+
+                <h3>Review</h3>
+                <p>Oppenheimer is a powerful and intense film with excellent acting and brilliant direction. It presents science, politics, and human conflict in a very engaging way.</p>
+            </div>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <h4>Movie Review Mobile Website</h4>
+        </div>
+    </div>
+
+    <div data-role="page" id="movie2">
+        <div data-role="header">
+            <h1>Interstellar</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-transition="slide">Home</a></li>
+                    <li><a href="#movie1" data-transition="slide">Movie 1</a></li>
+                    <li><a href="#movie2" class="ui-btn-active ui-state-persist" data-transition="slide">Movie 2</a></li>
+                    <li><a href="#movie3" data-transition="slide">Movie 3</a></li>
+                    <li><a href="#movie4" data-transition="slide">Movie 4</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div role="main" class="ui-content">
+            <img src="images/interstellar.jpg" alt="Interstellar Poster" class="movie-poster">
+            <div class="review-box">
+                <h3>Genre</h3>
+                <p>Adventure, Drama, Sci-Fi</p>
+
+                <h3>Short Summary</h3>
+                <p>A team of astronauts travels through a wormhole in search of a new habitable planet to save humanity.</p>
+
+                <h3>Review</h3>
+                <p>Interstellar is visually stunning and emotionally deep. It combines science fiction with strong family emotions and keeps the audience connected throughout the journey.</p>
+            </div>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <h4>Movie Review Mobile Website</h4>
+        </div>
+    </div>
+
+    <div data-role="page" id="movie3">
+        <div data-role="header">
+            <h1>Inception</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-transition="slide">Home</a></li>
+                    <li><a href="#movie1" data-transition="slide">Movie 1</a></li>
+                    <li><a href="#movie2" data-transition="slide">Movie 2</a></li>
+                    <li><a href="#movie3" class="ui-btn-active ui-state-persist" data-transition="slide">Movie 3</a></li>
+                    <li><a href="#movie4" data-transition="slide">Movie 4</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div role="main" class="ui-content">
+            <img src="images/inception.jpg" alt="Inception Poster" class="movie-poster">
+            <div class="review-box">
+                <h3>Genre</h3>
+                <p>Action, Adventure, Sci-Fi</p>
+
+                <h3>Short Summary</h3>
+                <p>A skilled thief enters people’s dreams to steal secrets, but this time he is assigned to plant an idea into someone’s mind.</p>
+
+                <h3>Review</h3>
+                <p>Inception is a smart and thrilling movie with a unique concept. Its dream-based story, action scenes, and suspense make it one of the most memorable sci-fi films.</p>
+            </div>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <h4>Movie Review Mobile Website</h4>
+        </div>
+    </div>
+
+    <div data-role="page" id="movie4">
+        <div data-role="header">
+            <h1>Barbie</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-transition="slide">Home</a></li>
+                    <li><a href="#movie1" data-transition="slide">Movie 1</a></li>
+                    <li><a href="#movie2" data-transition="slide">Movie 2</a></li>
+                    <li><a href="#movie3" data-transition="slide">Movie 3</a></li>
+                    <li><a href="#movie4" class="ui-btn-active ui-state-persist" data-transition="slide">Movie 4</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div role="main" class="ui-content">
+            <img src="images/barbie.jpg" alt="Barbie Poster" class="movie-poster">
+            <div class="review-box">
+                <h3>Genre</h3>
+                <p>Adventure, Comedy, Fantasy</p>
+
+                <h3>Short Summary</h3>
+                <p>Barbie leaves her perfect world and enters the real world, where she learns about identity, society, and self-discovery.</p>
+
+                <h3>Review</h3>
+                <p>Barbie is colorful, entertaining, and meaningful. It mixes humor with social themes and gives a fresh take on a well-known character.</p>
+            </div>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <h4>Movie Review Mobile Website</h4>
+        </div>
+    </div>
+
+    <div data-role="page" id="movie5">
+        <div data-role="header">
+            <h1>Dune: Part Two</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-transition="slide">Home</a></li>
+                    <li><a href="#movie1" data-transition="slide">Movie 1</a></li>
+                    <li><a href="#movie2" data-transition="slide">Movie 2</a></li>
+                    <li><a href="#movie3" data-transition="slide">Movie 3</a></li>
+                    <li><a href="#movie5" class="ui-btn-active ui-state-persist" data-transition="slide">Movie 5</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div role="main" class="ui-content">
+            <img src="images/dune2.jpg" alt="Dune Part Two Poster" class="movie-poster">
+            <div class="review-box">
+                <h3>Genre</h3>
+                <p>Action, Adventure, Drama</p>
+
+                <h3>Short Summary</h3>
+                <p>Paul Atreides joins the Fremen and begins his journey of revenge, leadership, and destiny on the desert planet Arrakis.</p>
+
+                <h3>Review</h3>
+                <p>Dune: Part Two is visually grand and full of action. It expands the story beautifully and gives a strong cinematic experience with impressive performances.</p>
+            </div>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <h4>Movie Review Mobile Website</h4>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PICT College Mobile Website</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+        .hero {
+            background-color: rgb(0, 255, 255);
+            padding: 20px;
+            border-radius: 20px;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .hero p {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div data-role="page" id="home">
+        <div data-role="header">
+            <h1>PICT Pune</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" class="ui-btn-active ui-state-persist" data-transition="slide">Home</a></li>
+                    <li><a href="#about" data-transition="slide">About</a></li>
+                    <li><a href="#courses" data-transition="slide">Courses</a></li>
+                    <li><a href="#departments" data-transition="slide">Departments</a></li>
+                    <li><a href="#contact" data-transition="slide">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div role="main" class="ui-content">
+            <div class="hero">
+                <h1>Pune Institute of Computer Technology</h1>
+                <p>A simple jquery Mobile Website for Mobile users.</p>
+            </div>
+            <p class="section-note">
+                Welcome to the mobile website of PICT, a reputed engineering institute in Pune known for its
+                student-centered approach and research-focused learning environment.
+            </p>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>Quick Highlights</h3>
+                <ul data-role="listview" data-inset="false">
+                    <li>Established engineering institution in Pune.</li>
+                    <li>Offers undergraduate, postgraduate, and doctoral programs.</li>
+                    <li>Strong focus on innovation, technical education, and student growth.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <h4 class="footer-text">PICT Mobile Website</h4>
+        </div>
+    </div>
+
+
+
+    <div data-role="page" id="about">
+        <div data-role="header">
+            <h1>About us</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-transition="slide">Home</a></li>
+                    <li><a href="#about" class="ui-btn-active ui-state-persist" data-transition="slide">About</a></li>
+                    <li><a href="#courses" data-transition="slide">Courses</a></li>
+                    <li><a href="#departments" data-transition="slide">Departments</a></li>
+                    <li><a href="#contact" data-transition="slide">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div role="main" class="ui-content">
+            <p>
+                Pune Institute of Computer Technology (PICT) presents itself as a world-class institute with a unique
+                student-centered approach and a research-intensive learning environment.
+            </p>
+            <p>
+                The institute emphasizes innovation, industry interaction, academic growth, and overall student
+                development through technical, cultural, and professional activities.
+            </p>
+            <div data-role="collapsible-set">
+                <div data-role="collapsible" data-collapsed="false">
+                    <h3>Vision</h3>
+                    <p></p>
+                </div>
+                <div data-role="collapsible" data-collapsed="true">
+                    <h3>Mission</h3>
+                </div>
+                <div data-role="collapsible" data-collapsed="true">
+                    <h3>Campus Culture</h3>
+                </div>
+            </div>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <h4 class="footer-text">PICT Mobile Website</h4>
+        </div>
+    </div>
+
+
+
+    <div data-role="page" id="courses">
+        <div data-role="header">
+            <h1>PICT Pune</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-transition="slide">Home</a></li>
+                    <li><a href="#about" data-transition="slide">About</a></li>
+                    <li><a href="#courses" class="ui-btn-active ui-state-persist" data-transition="slide">Courses</a>
+                    </li>
+                    <li><a href="#departments" data-transition="slide">Departments</a></li>
+                    <li><a href="#contact" data-transition="slide">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div role="main" class="ui-content">
+            <div data-role="collapsible-set">
+                <div data-role="collapsible" data-collapsed="false">
+                    <h3>Undergraduate Programs</h3>
+                    <ul data-role="listview">
+                        <li>B.Tech / B.E. in Computer Engineering</li>
+                        <li>B.Tech / B.E. in Information Technology</li>
+                        <li>B.Tech / B.E. in Electronics and Telecommunication Engineering</li>
+                        <li>B.Tech in Artificial Intelligence and Data Science</li>
+                        <li>B.Tech in Electronics and Computer Engineering</li>
+                    </ul>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Postgraduate Programs</h3>
+                    <ul data-role="listview">
+                        <li>M.E. / M.Tech in Computer Engineering</li>
+                        <li>M.E. / M.Tech in Information Technology</li>
+                        <li>M.E. / M.Tech in Electronics and Communication Engineering</li>
+                        <li>M.E. / M.Tech in Electronics Engineering</li>
+                    </ul>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Research Programs</h3>
+                    <p>Doctoral research opportunities are available in engineering disciplines such as Computer
+                        Engineering and Electronics.</p>
+                </div>
+            </div>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <h4 class="footer-text">PICT Mobile Website</h4>
+        </div>
+    </div>
+
+
+
+    <div data-role="page" id="departments">
+        <div data-role="header">
+            <h1>PICT Pune</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-transition="slide">Home</a></li>
+                    <li><a href="#about" data-transition="slide">About</a></li>
+                    <li><a href="#courses" data-transition="slide">Courses</a></li>
+                    <li><a href="#departments" class="ui-btn-active ui-state-persist"data-transition="slide">Departments</a></li>
+                    <li><a href="#contact" data-transition="slide">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div role="main" class="ui-content">
+            <p class="section-note">PICT offers major departments focused on core and emerging technology domains.</p>
+
+            <div data-role="collapsible-set">
+                <div data-role="collapsible" data-collapsed="false">
+                    <h3>Computer Engineering</h3>
+                    <p>Focuses on software development, systems programming, data structures, algorithms, and modern
+                        computing technologies.</p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Information Technology</h3>
+                    <p>Covers web technologies, databases, cloud systems, networking, cybersecurity, and enterprise
+                        applications.</p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Electronics and Telecommunication</h3>
+                    <p>Deals with communication systems, embedded systems, electronics, signal processing, and hardware
+                        technologies.</p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Emerging Areas</h3>
+                    <p>Programs in Artificial Intelligence and Data Science, along with Electronics and Computer
+                        Engineering, address current industry needs.</p>
+                </div>
+            </div>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h4 class="footer-text">PICT Mobile Website</h4>
+        </div>
+    </div>
+
+
+
+    <div data-role="page" id="contact">
+        <div data-role="header">
+            <h1>PICT Contact</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-transition="slideup">Home</a></li>
+                    <li><a href="#about" data-transition="slide">About</a></li>
+                    <li><a href="#courses" data-transition="slide">Courses</a></li>
+                    <li><a href="#departments" data-transition="slide">Departments</a></li>
+                    <li><a href="#contact" class="ui-btn-active ui-state-persist" data-transition="slide">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div role="main" class="ui-content">
+            <div class="contact-box">
+                <h3>How to reach PICT</h3>
+                <p><strong>Address :</strong><Address>PICT , near Katraj chowk !</Address></p>
+                <p><strong>Phone :</strong> 8625967038</p>
+                <p><strong>Website :</strong><a href="https://pict.edu">pict.edu</a></p>
+            </div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>Visit Information</h3>
+                <p>The campus is located in Dhankawadi, Pune, and is accessible from major city routes on Pune-Satara
+                    Road.</p>
+            </div>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h4 class="footer-text">PICT Mobile Website</h4>
+        </div>
+    </div>
+</body>
+
+</html>

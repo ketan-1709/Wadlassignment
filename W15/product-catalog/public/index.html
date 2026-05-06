@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Product Catalog</title>
+</head>
+<body>
+
+<h2>Product Catalog</h2>
+
+<div id="result"></div>
+
+<script>
+fetch("/api/products")
+  .then(res => res.json())
+  .then(data => {
+    let output = "";
+
+    data.forEach(p => {
+      output += `
+        <div style="border:1px solid black; padding:10px; margin:10px;">
+          <img src="${p.image}" width="100"><br>
+          <b>${p.name}</b><br>
+          Price: ₹${p.price}
+        </div>
+      `;
+    });
+
+    document.getElementById("result").innerHTML = output;
+  });
+</script>
+
+</body>
+</html>

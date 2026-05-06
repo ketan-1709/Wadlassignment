@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <div class="card p-4">
+
+            <h2 class="text-center mb-4">Event Registration</h2>
+
+            <form class="needs-validation" novalidate>
+
+                <!-- Name -->
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" placeholder="Name" required>
+                    <label>Full Name</label>
+                    <div class="invalid-feedback">Enter name</div>
+                </div>
+
+                <!-- Email -->
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" placeholder="Email" required>
+                    <label>Email</label>
+                    <div class="invalid-feedback">Enter valid email</div>
+                </div>
+
+                <!-- Phone -->
+                <div class="form-floating mb-3">
+                    <input type="tel" class="form-control" placeholder="Phone" required>
+                    <label>Phone</label>
+                    <div class="invalid-feedback">Enter phone</div>
+                </div>
+
+                <!-- Event -->
+                <div class="mb-3">
+                    <label class="form-label">Event</label>
+                    <select class="form-select" required>
+                        <option value="">Select</option>
+                        <option>Workshop</option>
+                        <option>Seminar</option>
+                    </select>
+                    <div class="invalid-feedback">Select event</div>
+                </div>
+
+                <!-- Username (Tooltip) -->
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" placeholder="Username" data-bs-toggle="tooltip"
+                        title="Unique username" required>
+                    <label>Username</label>
+                </div>
+
+                <!-- Submit -->
+                <button type="submit" class="btn btn-primary w-100">Register</button>
+
+            </form>
+
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Tooltip init (simple)
+        document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach(el => {
+            new bootstrap.Tooltip(el);
+        });
+
+        // Validation (simple)
+        const form = document.querySelector('.needs-validation');
+
+        form.addEventListener('submit', function (e) {
+            if (!form.checkValidity()) {
+                e.preventDefault();
+            }
+            form.classList.add('was-validated');
+        });
+    </script>
+
+</body>
+
+</html>

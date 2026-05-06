@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Personal Portfolio Mobile Site</title>
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .hero {
+      background: linear-gradient(135deg, #4a148c, #7b1fa2);
+      color: white;
+      text-align: center;
+      padding: 28px 16px;
+      border-radius: 10px;
+      margin-top: 12px;
+    }
+    .hero h1 {
+      font-size: 1.8rem;
+      margin-bottom: 8px;
+    }
+    .hero p {
+      font-size: 1rem;
+      margin: 0;
+    }
+    .section-note {
+      margin: 12px 0;
+      color: #444;
+      line-height: 1.5;
+    }
+    .contact-box {
+      background: #f7f2fb;
+      border-left: 4px solid #7b1fa2;
+      padding: 12px;
+      border-radius: 6px;
+      margin-top: 12px;
+    }
+    .footer-text {
+      font-size: 0.85rem;
+      text-align: center;
+      color: #666;
+    }
+    .ui-content ul li {
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+
+<div data-role="page" id="home">
+  <div data-role="header" data-position="fixed" data-theme="b">
+    <h1>My Portfolio</h1>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#home" class="ui-btn-active ui-state-persist" data-transition="fade">Home</a></li>
+        <li><a href="#about" data-transition="slide">About</a></li>
+        <li><a href="#projects" data-transition="slide">Projects</a></li>
+        <li><a href="#skills" data-transition="slide">Skills</a></li>
+        <li><a href="#contact" data-transition="slideup">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div role="main" class="ui-content">
+    <div class="hero">
+      <h1>Rajvardhan Kharat</h1>
+      <p>Engineering Student | Full-Stack Learner | Data Science Enthusiast</p>
+    </div>
+
+    <p class="section-note">
+      Welcome to my mobile portfolio website. This simple jQuery Mobile site introduces my background, projects, skills, and contact information in a clean mobile-friendly format.
+    </p>
+
+    <div data-role="collapsible" data-collapsed="false">
+      <h3>Quick Profile</h3>
+      <ul data-role="listview" data-inset="false">
+        <li>Interested in MERN stack development.</li>
+        <li>Learning machine learning and problem solving.</li>
+        <li>Focused on building practical and academic projects.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    <h4 class="footer-text">Personal Portfolio</h4>
+  </div>
+</div>
+
+<div data-role="page" id="about">
+  <div data-role="header" data-position="fixed" data-theme="b">
+    <h1>About Me</h1>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#home" data-transition="fade">Home</a></li>
+        <li><a href="#about" class="ui-btn-active ui-state-persist" data-transition="slide">About</a></li>
+        <li><a href="#projects" data-transition="slide">Projects</a></li>
+        <li><a href="#skills" data-transition="slide">Skills</a></li>
+        <li><a href="#contact" data-transition="slideup">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div role="main" class="ui-content">
+    <p>
+      I am an engineering student with strong interest in web development, programming, and data science. I enjoy learning new technologies and applying them to real-world projects.
+    </p>
+    <p>
+      My goal is to become a skilled software developer by improving my frontend, backend, database, and analytical problem-solving abilities.
+    </p>
+
+    <div data-role="collapsible-set">
+      <div data-role="collapsible" data-collapsed="false">
+        <h3>Education</h3>
+        <p>I am pursuing engineering and continuously working on technical skills through projects, internships, and self-learning.</p>
+      </div>
+      <div data-role="collapsible">
+        <h3>Interests</h3>
+        <p>I am interested in full-stack development, machine learning, APIs, data structures, and competitive exam preparation.</p>
+      </div>
+    </div>
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    <h4 class="footer-text">About Me</h4>
+  </div>
+</div>
+
+<div data-role="page" id="projects">
+  <div data-role="header" data-position="fixed" data-theme="b">
+    <h1>Projects</h1>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#home" data-transition="fade">Home</a></li>
+        <li><a href="#about" data-transition="slide">About</a></li>
+        <li><a href="#projects" class="ui-btn-active ui-state-persist" data-transition="slide">Projects</a></li>
+        <li><a href="#skills" data-transition="slide">Skills</a></li>
+        <li><a href="#contact" data-transition="slideup">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div role="main" class="ui-content">
+    <div data-role="collapsible-set">
+      <div data-role="collapsible" data-collapsed="false">
+        <h3>Portfolio Website</h3>
+        <p>A personal website project to present my profile, achievements, and technical work in a responsive format.</p>
+      </div>
+      <div data-role="collapsible">
+        <h3>Fraud Detection System</h3>
+        <p>A data-driven project idea focused on identifying suspicious transaction patterns using analytics and machine learning concepts.</p>
+      </div>
+      <div data-role="collapsible">
+        <h3>Full-Stack Practice Apps</h3>
+        <p>Small applications built while learning HTML, CSS, JavaScript, React, Node.js, and API integration.</p>
+      </div>
+    </div>
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    <h4 class="footer-text">My Projects</h4>
+  </div>
+</div>
+
+<div data-role="page" id="skills">
+  <div data-role="header" data-position="fixed" data-theme="b">
+    <h1>Skills</h1>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#home" data-transition="fade">Home</a></li>
+        <li><a href="#about" data-transition="slide">About</a></li>
+        <li><a href="#projects" data-transition="slide">Projects</a></li>
+        <li><a href="#skills" class="ui-btn-active ui-state-persist" data-transition="slide">Skills</a></li>
+        <li><a href="#contact" data-transition="slideup">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div role="main" class="ui-content">
+    <div data-role="collapsible-set">
+      <div data-role="collapsible" data-collapsed="false">
+        <h3>Frontend</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React basics</li>
+        </ul>
+      </div>
+      <div data-role="collapsible">
+        <h3>Backend</h3>
+        <ul>
+          <li>Node.js basics</li>
+          <li>Express basics</li>
+          <li>REST APIs</li>
+        </ul>
+      </div>
+      <div data-role="collapsible">
+        <h3>Other Skills</h3>
+        <ul>
+          <li>Python</li>
+          <li>Machine learning fundamentals</li>
+          <li>Data structures and algorithms</li>
+          <li>Git and VS Code</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    <h4 class="footer-text">Technical Skills</h4>
+  </div>
+</div>
+
+<div data-role="page" id="contact">
+  <div data-role="header" data-position="fixed" data-theme="b">
+    <h1>Contact Info</h1>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#home" data-transition="fade">Home</a></li>
+        <li><a href="#about" data-transition="slide">About</a></li>
+        <li><a href="#projects" data-transition="slide">Projects</a></li>
+        <li><a href="#skills" data-transition="slide">Skills</a></li>
+        <li><a href="#contact" class="ui-btn-active ui-state-persist" data-transition="slideup">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div role="main" class="ui-content">
+    <div class="contact-box">
+      <h3>Get in Touch</h3>
+      <p><strong>Name:</strong> Rajvardhan Kharat</p>
+      <p><strong>Email:</strong> rajvardhan@example.com</p>
+      <p><strong>Location:</strong> Pune, Maharashtra</p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">linkedin.com</a></p>
+    </div>
+
+    <div data-role="collapsible" data-collapsed="false">
+      <h3>Availability</h3>
+      <p>I am open to internships, learning opportunities, collaborative projects, and technical networking.</p>
+    </div>
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    <h4 class="footer-text">Contact Me</h4>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Amit Sharma",
+    "designation": "Manager",
+    "department": "HR",
+    "salary": 50000,
+    "image": "https://via.placeholder.com/100"
+  },
+  {
+    "name": "Priya Patil",
+    "designation": "Developer",
+    "department": "IT",
+    "salary": 60000,
+    "image": "https://via.placeholder.com/100"
+  },
+  {
+    "name": "Rahul Joshi",
+    "designation": "Tester",
+    "department": "QA",
+    "salary": 45000,
+    "image": "https://via.placeholder.com/100"
+  }
+]

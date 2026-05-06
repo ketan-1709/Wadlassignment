@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Employee Directory</title>
+</head>
+<body>
+
+<h2>Employee Directory</h2>
+
+<div id="result"></div>
+
+<script>
+fetch("/api/employees")
+  .then(res => res.json())
+  .then(data => {
+    let output = "";
+
+    data.forEach(emp => {
+      output += `
+        <div style="border:1px solid black; padding:10px; margin:10px;">
+          <img src="${emp.image}" width="100"><br>
+          <b>Name:</b> ${emp.name}<br>
+          <b>Designation:</b> ${emp.designation}<br>
+          <b>Department:</b> ${emp.department}<br>
+          <b>Salary:</b> ₹${emp.salary}<br>
+        </div>
+      `;
+    });
+
+    document.getElementById("result").innerHTML = output;
+  });
+</script>
+
+</body>
+</html>

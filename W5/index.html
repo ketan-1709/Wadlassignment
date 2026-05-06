@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>E-Commerce Product Page</title>
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style>
+        body {
+            background: #f5f7fa;
+        }
+
+        .card img {
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card {
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container py-4">
+
+        <!-- Title -->
+        <h1 class="text-center mb-4">🛒 Product Listing</h1>
+
+        <!-- Filter -->
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h5>Products</h5>
+
+            <select id="categoryFilter" class="form-select w-auto">
+                <option value="all">All Categories</option>
+                <option value="electronics">Electronics</option>
+                <option value="fashion">Fashion</option>
+                <option value="home">Home</option>
+            </select>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="row" id="productContainer">
+
+            <!-- Product Card -->
+            <div class="col-md-4 col-sm-6 mb-4 product" data-category="electronics">
+                <div class="card">
+                    <img src="images/mug1.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Headphones</h5>
+                        <p class="card-text">Noise cancelling headphones</p>
+                        <p><strong>₹7,999</strong></p>
+                        <button class="btn btn-primary w-100">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 mb-4 product" data-category="electronics">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Smartwatch</h5>
+                        <p class="card-text">Fitness smartwatch</p>
+                        <p><strong>₹12,999</strong></p>
+                        <button class="btn btn-primary w-100">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 mb-4 product" data-category="fashion">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">T-Shirt</h5>
+                        <p class="card-text">Comfortable cotton t-shirt</p>
+                        <p><strong>₹999</strong></p>
+                        <button class="btn btn-primary w-100">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 mb-4 product" data-category="home">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Lamp</h5>
+                        <p class="card-text">Decorative table lamp</p>
+                        <p><strong>₹1,499</strong></p>
+                        <button class="btn btn-primary w-100">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- JS for Filter -->
+    <script>
+        const filter = document.getElementById("categoryFilter");
+        const products = document.querySelectorAll(".product");
+
+        filter.addEventListener("change", () => {
+            const value = filter.value;
+
+            products.forEach(product => {
+                if (value === "all" || product.dataset.category === value) {
+                    product.style.display = "block";
+                } else {
+                    product.style.display = "none";
+                }
+            });
+        });
+    </script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

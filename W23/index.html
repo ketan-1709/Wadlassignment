@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PICT Student Clubs Mobile Website</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <style>
+        .hero {
+            background-color: rgb(0, 255, 255);
+            padding: 20px;
+            border-radius: 20px;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .hero p {
+            color: red;
+        }
+
+        .club-image {
+            width: 100%;
+            max-width: 280px;
+            display: block;
+            margin: 10px auto;
+            border-radius: 12px;
+        }
+
+        .section-note {
+            margin-top: 10px;
+        }
+
+        .club-box {
+            background-color: #f9f9f9;
+            padding: 12px;
+            border-radius: 12px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div data-role="page" id="home">
+        <div data-role="header">
+            <h1>PICT Clubs</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" class="ui-btn-active ui-state-persist" data-transition="slide">Home</a></li>
+                    <li><a href="#coding" data-transition="slide">Coding</a></li>
+                    <li><a href="#robotics" data-transition="slide">Robotics</a></li>
+                    <li><a href="#dance" data-transition="slide">Dance</a></li>
+                    <li><a href="#sports" data-transition="slide">Sports</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div role="main" class="ui-content">
+            <div class="hero">
+                <h1>PICT Student Clubs</h1>
+                <p>A simple jQuery Mobile Website for Mobile users.</p>
+            </div>
+
+            <p class="section-note">
+                Welcome to the mobile website of PICT student clubs and extracurricular activities. These clubs help
+                students explore technical, cultural, creative, and sports interests beyond academics.
+            </p>
+
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>Quick Highlights</h3>
+                <ul data-role="listview" data-inset="false">
+                    <li>Technical, cultural, and sports clubs for students.</li>
+                    <li>Encourages innovation, teamwork, creativity, and leadership.</li>
+                    <li>Provides opportunities in competitions, events, and achievements.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <h4 class="footer-text">PICT Clubs Mobile Website</h4>
+        </div>
+    </div>
+
+    <div data-role="page" id="coding">
+        <div data-role="header">
+            <h1>Coding Club</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-transition="slide">Home</a></li>
+                    <li><a href="#coding" class="ui-btn-active ui-state-persist" data-transition="slide">Coding</a></li>
+                    <li><a href="#robotics" data-transition="slide">Robotics</a></li>
+                    <li><a href="#dance" data-transition="slide">Dance</a></li>
+                    <li><a href="#sports" data-transition="slide">Sports</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div role="main" class="ui-content">
+            <img src="images/coding-club.jpg" alt="Coding Club" class="club-image">
+
+            <div class="club-box">
+                <p><strong>Name:</strong> Coding Club</p>
+                <p><strong>Description:</strong> The Coding Club promotes programming skills, problem-solving,
+                    hackathons, coding contests, and technical collaboration among students.</p>
+                <p><strong>Achievements:</strong> Members have participated in coding competitions, hackathons, and
+                    technical workshops, and have developed innovative software projects.</p>
+            </div>
+
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>Activities</h3>
+                <p>The club regularly organizes coding challenges, DSA practice sessions, web development events, and
+                    peer learning activities.</p>
+            </div>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <h4 class="footer-text">PICT Clubs Mobile Website</h4>
+        </div>
+    </div>
+
+    <div data-role="page" id="robotics">
+        <div data-role="header">
+            <h1>Robotics Club</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-transition="slide">Home</a></li>
+                    <li><a href="#coding" data-transition="slide">Coding</a></li>
+                    <li><a href="#robotics" class="ui-btn-active ui-state-persist" data-transition="slide">Robotics</a></li>
+                    <li><a href="#dance" data-transition="slide">Dance</a></li>
+                    <li><a href="#sports" data-transition="slide">Sports</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div role="main" class="ui-content">
+            <img src="images/robotics-club.jpg" alt="Robotics Club" class="club-image">
+
+            <div class="club-box">
+                <p><strong>Name:</strong> Robotics Club</p>
+                <p><strong>Description:</strong> The Robotics Club focuses on robot design, embedded systems,
+                    electronics, automation, and participation in robotics events and competitions.</p>
+                <p><strong>Achievements:</strong> Students have built line followers, obstacle-avoiding robots, and
+                    innovative prototypes for technical exhibitions and inter-college competitions.</p>
+            </div>
+
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>Activities</h3>
+                <p>The club conducts hardware workshops, sensor-based project sessions, Arduino practice, and teamwork
+                    activities for robotics competitions.</p>
+            </div>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <h4 class="footer-text">PICT Clubs Mobile Website</h4>
+        </div>
+    </div>
+
+    <div data-role="page" id="dance">
+        <div data-role="header">
+            <h1>Dance Club</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-transition="slide">Home</a></li>
+                    <li><a href="#coding" data-transition="slide">Coding</a></li>
+                    <li><a href="#robotics" data-transition="slide">Robotics</a></li>
+                    <li><a href="#dance" class="ui-btn-active ui-state-persist" data-transition="slide">Dance</a></li>
+                    <li><a href="#sports" data-transition="slide">Sports</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div role="main" class="ui-content">
+            <img src="images/dance-club.jpg" alt="Dance Club" class="club-image">
+
+            <div class="club-box">
+                <p><strong>Name:</strong> Dance Club</p>
+                <p><strong>Description:</strong> The Dance Club encourages students to express creativity through
+                    classical, folk, contemporary, and modern dance performances.</p>
+                <p><strong>Achievements:</strong> The club has performed in annual college festivals, cultural events,
+                    and inter-college competitions, earning appreciation and awards.</p>
+            </div>
+
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>Activities</h3>
+                <p>The club organizes regular practice sessions, choreography workshops, stage performances, and
+                    festival participation.</p>
+            </div>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <h4 class="footer-text">PICT Clubs Mobile Website</h4>
+        </div>
+    </div>
+
+    <div data-role="page" id="sports">
+        <div data-role="header">
+            <h1>Sports Club</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-transition="slide">Home</a></li>
+                    <li><a href="#coding" data-transition="slide">Coding</a></li>
+                    <li><a href="#robotics" data-transition="slide">Robotics</a></li>
+                    <li><a href="#dance" data-transition="slide">Dance</a></li>
+                    <li><a href="#sports" class="ui-btn-active ui-state-persist" data-transition="slide">Sports</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div role="main" class="ui-content">
+            <img src="images/sports-club.jpg" alt="Sports Club" class="club-image">
+
+            <div class="club-box">
+                <p><strong>Name:</strong> Sports Club</p>
+                <p><strong>Description:</strong> The Sports Club promotes physical fitness, teamwork, discipline, and
+                    active student participation in various indoor and outdoor sports.</p>
+                <p><strong>Achievements:</strong> Students have represented the institute in cricket, football,
+                    badminton, table tennis, and athletic competitions at different levels.</p>
+            </div>
+
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>Activities</h3>
+                <p>The club arranges sports meets, team practice sessions, fitness activities, and participation in
+                    college tournaments.</p>
+            </div>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <h4 class="footer-text">PICT Clubs Mobile Website</h4>
+        </div>
+    </div>
+
+</body>
+
+</html>
